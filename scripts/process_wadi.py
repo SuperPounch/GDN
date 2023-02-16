@@ -3,7 +3,6 @@ import pandas as pd
 import re
 from sklearn.preprocessing import MinMaxScaler
 
-
 # max min(0-1)
 def norm(train, test):
 
@@ -15,7 +14,7 @@ def norm(train, test):
 
 
 # downsample by 10
-def downsample(data, labels, down_len):
+def downsample(data,labels , down_len):
     np_data = np.array(data)
     np_labels = np.array(labels)
 
@@ -41,7 +40,7 @@ def downsample(data, labels, down_len):
 
 
 def main():
-
+    #edit -2-16
     train = pd.read_csv('./WADI_14days.csv', index_col=0)
     test = pd.read_csv('./WADI_attackdata_labelled.csv', index_col=0)
     
